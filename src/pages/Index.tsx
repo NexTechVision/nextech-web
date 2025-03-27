@@ -88,9 +88,9 @@ const Index = () => {
       <HeroSection />
 
       {/* Services Section */}
-      <section className="py-24 bg-background">
+      <section className="py-16 md:py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
             <h2 className="text-3xl font-display font-bold tracking-tight mb-4">
               Our Services
             </h2>
@@ -99,7 +99,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {services.map((service, index) => (
               <ServiceCard
                 key={service.title}
@@ -111,7 +111,7 @@ const Index = () => {
             ))}
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-10 md:mt-12">
             <Link
               to="/services"
               className="inline-flex items-center bg-primary text-primary-foreground px-6 py-3 rounded-md font-medium transition-all hover:bg-primary/90"
@@ -123,17 +123,17 @@ const Index = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-secondary/30">
+      <section className="py-14 md:py-20 bg-secondary/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+            {stats.map((stat) => (
               <div 
                 key={stat.label} 
                 className="text-center"
               >
                 <div className="relative mb-2 inline-block">
                   <Award className="h-8 w-8 text-primary/20 absolute -top-2 -right-2" />
-                  <p className="text-4xl font-display font-bold text-foreground">
+                  <p className="text-3xl md:text-4xl font-display font-bold text-foreground">
                     {stat.value}
                   </p>
                 </div>
@@ -145,9 +145,9 @@ const Index = () => {
       </section>
 
       {/* Featured Projects */}
-      <section className="py-24 bg-background">
+      <section className="py-16 md:py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
             <h2 className="text-3xl font-display font-bold tracking-tight mb-4">
               Featured Projects
             </h2>
@@ -156,7 +156,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {featuredProjects.map((project, index) => (
               <ProjectCard
                 key={project.title}
@@ -170,7 +170,7 @@ const Index = () => {
             ))}
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-10 md:mt-12">
             <Link
               to="/projects"
               className="inline-flex items-center bg-primary text-primary-foreground px-6 py-3 rounded-md font-medium transition-all hover:bg-primary/90"
@@ -185,7 +185,7 @@ const Index = () => {
       <TestimonialSection />
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary/5">
+      <section className="py-16 md:py-20 bg-primary/5">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-display font-bold tracking-tight mb-4">
             Ready to Transform Your Digital Presence?

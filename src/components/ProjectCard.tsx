@@ -51,7 +51,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div 
       ref={cardRef}
-      className="group relative overflow-hidden rounded-xl opacity-0"
+      className="group relative overflow-hidden rounded-xl opacity-0 h-full"
     >
       <div className="aspect-video w-full overflow-hidden rounded-xl">
         <img

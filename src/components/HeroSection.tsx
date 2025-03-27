@@ -32,16 +32,16 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden pt-20" ref={heroRef}>
+    <div className="relative overflow-hidden pt-16 md:pt-20" ref={heroRef}>
       {/* Background elements */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-blue-50 rounded-bl-full opacity-70"></div>
         <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-blue-50 rounded-tr-full opacity-70"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-28 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 md:pt-20 pb-24 md:pb-28 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
+          <div className="space-y-6 md:space-y-8">
             <span className="animate-on-scroll opacity-0 inline-block bg-blue-50 text-primary px-4 py-1.5 rounded-full text-sm font-medium">
               Innovate. Build. Transform.
             </span>
@@ -67,7 +67,7 @@ const HeroSection = () => {
               </Link>
             </div>
           </div>
-          <div className="animate-on-scroll opacity-0 relative">
+          <div className="animate-on-scroll opacity-0 relative mx-auto lg:mx-0 max-w-md lg:max-w-none">
             <div className="glass-card rounded-2xl p-1 shadow-xl">
               <img
                 src="https://images.unsplash.com/photo-1581472723648-909f4851d4ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
